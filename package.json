@@ -1,0 +1,41 @@
+{
+  "name": "mbtt-visual-editor-node",
+  "version": "1.0.0",
+  "description": "mbtt-visual-editor 后端",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "dev": "babel-node ./index.js",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArcherLCY/mbtt-visual-editor-node.git"
+  },
+  "keywords": [
+    "node",
+    "koa"
+  ],
+  "author": "Archer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArcherLCY/mbtt-visual-editor-node/issues"
+  },
+  "homepage": "https://github.com/ArcherLCY/mbtt-visual-editor-node#readme",
+  "dependencies": {
+    "@koa/cors": "^3.4.2",
+    "koa": "^2.13.4",
+    "koa-body-parser": "^1.1.2",
+    "koa-router": "^12.0.0",
+    "koa-static-cache": "^5.1.4",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/register": "^7.18.9"
+  }
+}
