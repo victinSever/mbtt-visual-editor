@@ -12,8 +12,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/home" element={<Home />}></Route>
-        <Route path="/login" element={<Login />}></Route>      
-        <Route path="/index" element={<Index />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        
+        <Route path="/index/*" element={<Index />}></Route>
         <Route path="/establish" element={<Establish />}></Route>
         <Route path="/clockIn" element={<ClockIn />}></Route>
         <Route path="*" element={<Navigate to="/login"/>}/>
