@@ -4,24 +4,31 @@
     background: #fff;
     overflow-y: scroll;
     padding: 10px;
+
+    .Consoole-title {
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bold;
+      
+    }
     
 
     h3{
         font-weight: bold;
     }
-    padding: 10px;
 
-    .haha{
+    .Console-button{
+        margin: 20px 0;
         display: flex;
-        justify-content: space-around;
-        margin-bottom: 20px;
+        justify-content: center;
+
+        button {
+            // border-radius: 5px;
+        }
+    }
+
+    .Console-content {
+        padding: 10px;
     }
 }   
-
-.Console .Consoole-title {
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-weight: bold;
-  
-}

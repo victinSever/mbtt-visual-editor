@@ -24,6 +24,7 @@ function Console() {
   const id = useSelector((state) => state.home.domId)
   const options = useSelector((state) => state.home.domOptions)
   const type = useSelector((state) => state.home.domType)
+  
   let control = (
     <>
      {id === options.id && type === 'Card' && <CardConsole options={options} />}
@@ -48,11 +49,15 @@ function Console() {
   )
   return (
     <div className="Console">
-      
-        <div className='haha'><Button onClick={() => {(setShowCode(showCode = true))}} shape='round'>控制台</Button>
-        <Button  onClick={() => {(setShowCode(showCode = false))}} shape='round'>生成代码</Button></div>
-      <div>
-        {showCode == true ? control : Showcode}
+      <div className='Console-button'>
+      {
+        showCode ? <Button onClick={() => {(setShowCode(false))}} shape='round'>控制台</Button> :
+        <Button  onClick={() => {(setShowCode(true))}} shape='round'>生成代码</Button>
+      }
+      </div>
+              
+      <div className='Console-content'>
+        {!showCode ? control : Showcode}
       </div>
     </div>
   );
