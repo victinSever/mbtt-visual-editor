@@ -13,7 +13,7 @@ import router from "./src/routers/mform.router.js";
 // 无论app.use放到路由前面还是后面
 // 都是先执行app.use再去执行路由
 app.use(async (ctx, next) => {
-  console.log("这是一个中间件"); // 执行顺序1
+  console.log("这是一个中间件",ctx); // 执行顺序1
   await next();
   if (ctx.status == 404) {
     // 执行顺序3
