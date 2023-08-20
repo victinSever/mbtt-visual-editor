@@ -2,12 +2,11 @@ import { useDispatch } from 'react-redux';
 import { changeOptions } from '../../pages/home/slice'
 import {
   Form,
-  Select,
   Button,
   Input,
   Checkbox
 } from 'antd';
-import { FontColorsOutlined, MailOutlined, PhoneOutlined, SmileOutlined, PictureOutlined, PaperClipOutlined, WalletOutlined, AppstoreAddOutlined, ScheduleOutlined } from '@ant-design/icons';
+import { SmileOutlined } from '@ant-design/icons';
 const App = (data) => {
   const dispatch = useDispatch()
   const ButtonGroup = Button.Group;

@@ -3,11 +3,8 @@ import { changeOptions } from '../../pages/home/slice';
 import { useDispatch } from 'react-redux';
 import {
     Form,
-    Select,
     Button,
     Input,
-    Checkbox,
-    Radio,
 } from 'antd';
 import {PaperClipOutlined} from '@ant-design/icons';
 const App = (data) => {

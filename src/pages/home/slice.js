@@ -29,7 +29,7 @@ export const homeSlice = createSlice({
     // 改变高亮聚焦的dom
     changeOptions: (state, action) => {
       state.domList.map((item, index) => {
-        return item.id === action.payload.id ? state.domList[index] = { ...action.payload } : item = item;
+        return item.id === action.payload.id ? state.domList[index] = { ...action.payload } : item;
       })
     },
     // 将新增的action的信息转移到 state 当中

@@ -7,7 +7,7 @@ const App = () => {
     const location = useLocation();
     const state = location.state
     return (
-        state.name == 'resume' ? <Resume /> : <ClockIn/>
+        state.name === 'resume' ? <Resume /> : <ClockIn/>
     )
 }
 export default App

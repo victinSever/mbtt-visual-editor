@@ -32,7 +32,6 @@ function typeToAntd(dom) {
     case 'radio': return <Radio options={dom} key={dom.id}></Radio>
     case 'email': return <Email options={dom} key={dom.id}></Email>
     case 'switch': return <Switch options={dom} key={dom.id}></Switch>
-    case 'rate': return <Rate options={dom} key={dom.id}></Rate>
     case 'resume': return <Resume options={dom} key={dom.id}></Resume>
     case 'textarea': return <Textarea options={dom} key={dom.id}></Textarea>
     case 'content': return <Contents options={dom} key={dom.id}></Contents>

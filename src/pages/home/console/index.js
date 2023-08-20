@@ -1,5 +1,8 @@
 import './consoleStyle.scss'
-import { useSelector } from 'react-redux'
+import { useSelector } from 'react-redux';
+import { useState } from 'react'
+import { Button  } from 'antd'
+
 // 导入自定义组件
 import CardConsole from '../../../components/card/cardConsole'
 import ButtonConsole from '../../../components/button/buttonConsole.jsx'
@@ -15,10 +18,10 @@ import TextConsole from '../../../components/text/textConsole'
 import DateConsole from '../../../components/datePicker/datePickerConsole'
 import LinkConsole from '../../../components/link/linkConsole'
 import TelephoneConsole from '../../../components/telephone/telephoneConsole'
-import ShowCode from '../../../showCode/showCode'
-import { useState } from 'react'
+import ShowCode from '../../../showCode/showCode.ts'
 
-import { Divider,Button  } from 'antd'
+
+
 function Console() {
   let [showCode,setShowCode] = useState(false)
   const id = useSelector((state) => state.home.domId)

@@ -1,4 +1,4 @@
-import { Button, Card, Empty  } from 'antd';
+import { Card, Empty  } from 'antd';
 import { useNavigate } from 'react-router';
 function Template() {
     const navigate = useNavigate();

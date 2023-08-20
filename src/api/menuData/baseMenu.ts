@@ -1,6 +1,4 @@
-
-export default [
-   
+const data: Array<Record<string, string | Array<string>>> = [  
     {
         type: 'Button',
         text: '按钮',
@@ -54,7 +52,6 @@ export default [
         type: 'Textarea',
         text: '多行文本',
         icon: '',       
-    },
- 
-    
+    }   
 ]
+export default data;

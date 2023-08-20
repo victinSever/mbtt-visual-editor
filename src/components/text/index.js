@@ -3,18 +3,14 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { changeId } from '../../pages/home/slice'
 import {
-  Form,
-  Select,
-  Input,
-  Radio,
-  Checkbox
+  Form
 } from 'antd'
 import './index.css'
 function App(data) {
   const dispatch = useDispatch()
   let options = { ...data.options }
 
-  const {justifyContent,fontSize, color, lineHeight, fontFamily, value, fontWeight, border } = options;
+  const {justifyContent,fontSize, color, lineHeight, fontFamily, value, fontWeight } = options;
   return (
     <div className = 'textIndex'
     style={{justifyContent:justifyContent|| 'center'}}

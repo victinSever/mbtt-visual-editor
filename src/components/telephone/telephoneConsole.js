@@ -3,13 +3,11 @@ import { changeOptions } from '../../pages/home/slice';
 import { useDispatch } from 'react-redux';
 import {
     Form,
-    Select,
-    Button,
     Input,
     Checkbox,
     Radio,
 } from 'antd'
-import { FontColorsOutlined, MailOutlined, PhoneOutlined, SmileOutlined, PictureOutlined, PaperClipOutlined, WalletOutlined, AppstoreAddOutlined, ScheduleOutlined } from '@ant-design/icons';
+import { PhoneOutlined } from '@ant-design/icons';
 
 const App = (data) => {
     let options = { ...data.options }
@@ -23,7 +21,7 @@ const App = (data) => {
                 <PhoneOutlined /> 电话</h2>
             <Form layout="vertical"
                 className='formStyle'>
-                    
+
                 <Form.Item label="标题">
                     <Input
                         placeholder="请输入标题"

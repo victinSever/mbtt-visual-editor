@@ -4,8 +4,6 @@ import { changeOptions } from '../../pages/home/slice'
 import { useDispatch } from "react-redux/es/exports";
 import {
     Form,
-    Select,
-    Button,
     Input,
     Radio,
     Checkbox

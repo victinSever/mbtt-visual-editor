@@ -6,7 +6,7 @@ const { Meta } = Card;
 
 function App(options) {
   const dispatch = useDispatch()
-  const { inputValue, autoFocus, defaultChecked, disabled, title, tooltip } = options.options;
+  const { inputValue, autoFocus, defaultChecked, disabled, tooltip } = options.options;
 
   return (
     <div className='radioIndex'>

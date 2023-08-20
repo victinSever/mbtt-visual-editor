@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { changeOptions,changeId } from '../../pages/home/slice'
+import { useState } from 'react';
+import { changeOptions } from '../../pages/home/slice'
 import {
   Form,
   Checkbox,
@@ -8,19 +9,20 @@ import {
 } from 'antd';
 import { FontColorsOutlined, } from '@ant-design/icons';
 
-const count = 0
 const App = (data) => {
 
   let options = { ...data.options }
 
   const dispatch = useDispatch();
+  const [count, setCount] = useState(0);
 
   // 复制一份text值
   let copyText = [...options.inputValue];
 
   // 添加input回调
   function addInput() {
-    options.inputValue = [...options.inputValue, '默认' + (count++)];
+    setCount(count + 1)
+    options.inputValue = [...options.inputValue, '默认' + (count + 1)];
     copyText= options.inputValue;
     dispatch(changeOptions(options));
   }

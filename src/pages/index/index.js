@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+import { Menu } from 'antd';
 import {
     MailOutlined,
     PieChartOutlined,
@@ -5,10 +7,8 @@ import {
 import Template from './components/template';
 import Index from './components/index';
 import Establish from '../establish/resume';
-import { Menu } from 'antd';
-import React, { useState } from 'react';
 import './indexStyle.scss'
-import { get, post } from '../../api/http'
+import { get } from '../../api/http'
 // 路由使用
 import { Routes, Route, Navigate, useNavigate } from "react-router-dom"
 
@@ -29,22 +29,6 @@ const items = [
         getItem('模板', 'template'),
     ]),
 ];
-function getFun() {
-    // http://localhost:8080
-    post('/api/mform/addMForm', {
-        id: "123112",
-        name: "test",
-        rules: {
-            username: "admin",
-            password: "123456"
-        },
-        data: [
-            {code: 1}
-        ]
-    }).then(res => {
-        console.log(res);
-    })
-}
 
 function findOne() {
     get('/api/mform/findOne', {
@@ -56,11 +40,9 @@ function findOne() {
 
 const App = () => {
     const [collapsed] = useState(false);
-    const [current, setCurrent] = useState('index');
     const navigate = useNavigate()
     const onClick = (e) => {
         console.log('click ', e);
-        setCurrent(e.key);
         navigate(e.key)
     };
     // getFun()
@@ -69,7 +51,7 @@ const App = () => {
             <div
                 className='leftMenu'
             >
-                <h3 onClick={()=>findOne()}>visual-editor</h3>
+                <h3 onClick={() => findOne()}>visual-editor</h3>
                 <Menu
                     defaultSelectedKeys={['index']}
                     defaultOpenKeys={['sub1']}

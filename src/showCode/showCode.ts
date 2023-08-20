@@ -1,9 +1,7 @@
 // 生成代码
-
-import React from "react";
 import { useSelector } from "react-redux";
 
-function check(dom) {
+function check(dom: any) {
     let type = dom.type.toLowerCase();
     let title = dom.title
     let src = dom.src
@@ -111,10 +109,8 @@ function check(dom) {
 }
 
 const App = () => {
-    const domList = useSelector((state) => state.home.domList)
+    const domList = useSelector((state: any) => state.home.domList)
     console.log('domListdomList', domList)
-    return domList.map((item, index) => {
-        return check(item)
-    })
+    return domList.map((item: any) => check(item))
 }
 export default App

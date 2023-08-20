@@ -24,16 +24,13 @@ function App(options) {
 
           <h4 className='indexTips'
             onClick={() => {
-              console.log(options);
               dispatch(changeId(options.options))
             }}
           >
             {options.options?.tips || ""}
           </h4>
-          <img src={options.options?.src} className={'picture'} onClick={() => { console.log(options); dispatch(changeId(options.options)) }}
-            style={{
-
-            }} />
+          <img src={options.options?.src} alt='' className={'picture'} onClick={() => { console.log(options); dispatch(changeId(options.options)) }}
+            />
         </div>
       </Form.Item>
     </Form>

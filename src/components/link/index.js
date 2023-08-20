@@ -1,15 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { changeId } from '../../pages/home/slice'
-import { useEffect } from 'react';
 import './link.css'
-import {
-    Form,
-    Select,
-    Input,
-    Radio,
-    Checkbox
-} from 'antd'
+import { Form } from 'antd'
 const App = (options) => {
     const dispatch = useDispatch();
     return (

@@ -1,10 +1,10 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { nanoid } from 'nanoid';
 import { increment } from '../slice'
 import styles from './index.module.scss'
 import {Button} from 'antd'
-import beseMenu from '../../../api/menuData/baseMenu'
-import mediaMenu from '../../../api/menuData/mediaMenu'
+import beseMenu from '../../../api/menuData/baseMenu.ts'
+import mediaMenu from '../../../api/menuData/mediaMenu.ts'
 
 function Menu() {
     const dispatch = useDispatch()

@@ -3,10 +3,6 @@ import { useDispatch } from 'react-redux';
 import { changeId } from '../../pages/home/slice'
 import {
   Form,
-  Select,
-  Input,
-  Radio,
-  Checkbox,
   Rate
 } from 'antd'
 const App = (data) => {

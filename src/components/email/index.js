@@ -3,12 +3,8 @@ import { useDispatch } from 'react-redux';
 import { changeId } from '../../pages/home/slice'
 import {
   Form,
-  Select,
-  Input,
-  Radio,
-  Checkbox
+  Input
 } from 'antd'
-import { MailOutlined } from '@ant-design/icons';
 const App = (options) => {
 
   const dispatch = useDispatch();
